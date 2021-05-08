@@ -5,7 +5,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class Dendron():
+class DendronClient():
     """ Class that handles all the Dendron logic """
     def __init__(self, workspace_root, vaults=[]):
         """ Class constructor """

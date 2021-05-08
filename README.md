@@ -52,6 +52,10 @@ This extension requires the following settings to be set, according your Dendron
 | **Dendron Vaults**    	| A Comma separated list of Dendron vaults to be indexed, relative to the Dendron Workspace root.                                   	| `vault.personal,vault.dev`                                                                                                                                         	|
 | **Dendron Command**   	| The command to open your Dendron Workspace. Use `%f%` to indicate where the file path of the selected file will be placed. 	| `/usr/bin/codium --user-data-dir=/home/bruno/.config/dendron/data --extensions-dir=/home/bruno/.config/dendron/ext /home/bruno/Dendron/dendron.code-workspace %f%` 	|
 
+### Other commands
+
+* Notes are cached at Uluancher startup. To Refresh the notes cache at any time, run `dendron :reload`.
+
 ## Development
 
 ```

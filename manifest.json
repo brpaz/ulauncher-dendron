@@ -1,0 +1,37 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Dendron",
+  "description": "Access your Dendron notes from Ulauncher",
+  "developer_name": "Bruno Paz",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "Dendron",
+      "default_value": "dendron"
+    },
+    {
+      "id": "dendron_workspace_root",
+      "type": "input",
+      "name": "Dendron workspace",
+      "description": "The path to the Dendron workspace folder"
+    },
+    {
+      "id": "dendron_vaults",
+      "type": "input",
+      "name": "Dendron vaults",
+      "description": "A comma-separated list of paths to the Dendron vaults, relative to the Dendron workspace root"
+    },
+    {
+      "id": "dendron_cmd",
+      "type": "input",
+      "name": "Dendron command",
+      "description": "The command used to open note files in Dendron workspaces",
+      "default": "code %f%"
+    }
+  ]
+}

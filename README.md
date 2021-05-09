@@ -40,6 +40,7 @@ https://github.com/brpaz/ulauncher-dendron
 
 Before starting using this extension, you must set some settings to match your Dendron install. See section below.
 
+:rotating_light: Dendron cache files are only updated on the initialization of the Dendron Workspace. This means new notes won´t appear unless you reload your Dendron workspace.
 
 ### Configuration
 
@@ -55,6 +56,7 @@ This extension requires the following settings to be set, according your Dendron
 ### Other commands
 
 * Notes are cached at Uluancher startup. To Refresh the notes cache at any time, run `dendron :reload`.
+
 
 ## Development
 

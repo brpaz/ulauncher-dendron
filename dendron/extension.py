@@ -54,15 +54,26 @@ class DendronExtension(Extension):
                                         'open_note',
                                         'path':
                                         item['path']
+                                    }),
+                                    on_alt_enter=ExtensionCustomAction({
+                                        'action':
+                                        'preview_note',
+                                        'path':
+                                        item['path']
                                     })))
         return RenderResultListAction(items)
 
-    def open_note(self, path):
+    def open_in_dendron(self, path):
         """ Open the selected note on the configured Dendron workspace """
         cmd = self.preferences["dendron_cmd"]
         cmd = cmd.replace("%f%", path)
 
         subprocess.run(cmd, shell=True)
+
+    def open_in_quickmd(self, path):
+        """ Open the selected note using quickmd """
+
+        subprocess.run("quickmd {}".format(path), shell=True)
 
     def reload_action(self):
         """ Shows reload action """

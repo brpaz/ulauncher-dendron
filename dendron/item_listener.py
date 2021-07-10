@@ -8,7 +8,10 @@ class ItemEnterEventListener(EventListener):
         data = event.get_data()
 
         if data['action'] == 'open_note':
-            extension.open_note(data['path'])
+            extension.open_in_dendron(data['path'])
+
+        if data['action'] == 'preview_note':
+            extension.open_in_quickmd(data['path'])
 
         if data['action'] == 'reload':
             extension.load_notes()

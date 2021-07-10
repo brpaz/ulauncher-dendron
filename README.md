@@ -13,10 +13,13 @@
 * Find your notes by their title or hierarchy path.
 * Multi-vault support.
 * Compatible with multiple ways to launch Dendron (VSCode, Codium, separate extensions dir, etc). Just specify the full command to open your Dendron workspace on the Extension settings.
+* Open file with [Quickmd](https://github.com/AndrewRadev/quickmd) for quick preview. Requires quickmd to be installed.
 
 ### Demo
 
 ![demo](docs/assets/demo.gif)
+
+
 
 ## System Requirements
 
@@ -41,6 +44,10 @@ https://github.com/brpaz/ulauncher-dendron
 Before starting using this extension, you must set some settings to match your Dendron install. See section below.
 
 :rotating_light: Dendron cache files are only updated on the initialization of the Dendron Workspace. This means new notes won´t appear unless you reload your Dendron workspace.
+
+### Open with quickmd
+
+Select an item and press `ALT-Enter`
 
 ### Configuration
 
